@@ -3,6 +3,5 @@ Projekti nga lënda Interneti - FIEK - 2021
 
 '''
 <html>
-</head>
 </html>
 '''
