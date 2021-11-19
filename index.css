@@ -113,3 +113,26 @@ footer{
     word-spacing: 2px;
     text-transform: capitalize;
 }
+
+#pfoto {
+  margin: 20px;
+  width: auto;
+  height: 400px;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+#pershkrimi-produkt{
+  margin: 40px;
+  text-align: center;
+  font-family: "Georgia";
+  color: #100020;
+  margin-bottom:  40px;
+}
+#pershkrimi-prodhus{
+  margin: 40px;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 12px;
+  color: #29282b;
+  margin-bottom:  40px;
+}
