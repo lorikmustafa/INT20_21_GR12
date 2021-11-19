@@ -1,53 +1,53 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    background-color: hsl(266, 64%, 96%);
-    padding-top: 100px;
-  }
-  header {
+body {
+  background-color: hsl(266, 64%, 96%);
+  padding-top: 100px;
+}
+header {
+
+  display: flex;
+  align-items: center;
+  padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fe4365;
+}
+
+.logo {
+    padding: 0;
+  margin-right: auto;
+}
+#logoja {
+    margin: auto;
+  width: 130px;
+  height: 45px;
+}
+.nav_linqet {
+  list-style: none;
+  display: flex;
+}
+
+.nav_linqet a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav_linqet li {
+  padding: 15px 20px;
   
-    display: flex;
-    align-items: center;
-    padding: 15px 5%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fe4365;
-  }
-  
-  .logo {
-      padding: 0;
-    margin-right: auto;
-  }
-  #logoja {
-     margin: auto;
-    width: 130px;
-    height: 45px;
-  }
-  .nav_linqet {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav_linqet a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  
-  .nav_linqet li {
-    padding: 15px 20px;
-    
-  }
-  
-  .nav_linqet li a:hover {
-    color: #100020;
-  }
+}
+
+.nav_linqet li a:hover {
+  color: #100020;
+}
 
 footer{
     position: fixed;
@@ -121,6 +121,7 @@ footer{
   border-radius: 25px;
   border: 1px solid white;
 }
+
 #pershkrimi-produkt{
   margin: 40px;
   text-align: center;
@@ -128,6 +129,7 @@ footer{
   color: #100020;
   margin-bottom:  40px;
 }
+
 #pershkrimi-prodhus{
   margin: 40px;
   text-align: center;
