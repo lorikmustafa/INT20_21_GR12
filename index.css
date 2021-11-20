@@ -6,6 +6,7 @@
 
 body {
   background-color: hsl(266, 64%, 96%);
+  /* background-color:antiquewhite; */
   padding-top: 100px;
 }
 header {
@@ -117,7 +118,7 @@ footer{
 }
 
 #pfoto {
-  margin: 20px;
+  margin: 50px 50px 50px 50px;
   width: auto;
   /* height: 400px; */
   height: 500px;
@@ -178,6 +179,10 @@ margin-bottom: 30px;
   float: right;
   height: 700px;
   width: 30%;
+}
+
+div.bannerPhotos{
+  background-color:antiquewhite;
 }
 
 .banner {
