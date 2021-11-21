@@ -10,7 +10,6 @@ body {
   padding-top: 100px;
 }
 header {
-
   display: flex;
   align-items: center;
   padding: 15px 5%;
@@ -29,7 +28,7 @@ header {
   /* width: 130px;
   height: 45px; */
   width: auto;
-  height: 70px;
+  height: 45px;
 }
 .nav_linqet {
   list-style: none;
@@ -167,7 +166,6 @@ margin-bottom: 30px;
 }
 .bannerPhotos{
   display: flex;
-  
 }
 
 #bannerFoto1 {
@@ -183,6 +181,7 @@ margin-bottom: 30px;
 
 div.bannerPhotos{
   background-color:antiquewhite;
+  margin-top: -21px ;
 }
 
 .banner {
