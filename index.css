@@ -147,14 +147,15 @@ flex-wrap: wrap;
   margin-left: 10px;
 }
 .footer-logo{
-width: 33.33%;
-margin-left: 20px;
+/* width: 33.33%; */
+margin-left: 10px;
 }
 .footer-mes{
-margin-left: 20px;
+margin-left: 100px;
 margin-top: 20px;
-margin-right: 30px;
+/* margin-right: 30px; */
 line-height: 22pt;
+justify-content: center;
 /* width: 33.33%; */
 /* width: 20%; */
 }
@@ -173,10 +174,12 @@ footer li{
 }
 .footer-poshte {
 text-align: center;
-margin-top: 20px;
+margin-top: 60px;
+font-family: "Open Sans";
+color: #c0c0c0;
 }
 .footer-djatht {
-margin-left: 20px;
+margin-left: 10px;
 margin-top: 20px;
 margin-right: 100px;
 }
@@ -204,7 +207,7 @@ margin-left: 20px;
 } */
 #logojafooter {
 /* margin-left: 20px; */
-margin-left: 60px;
+margin-left: 40px;
 height: 70px; 
 width: auto;
 height: 80px;
@@ -343,4 +346,8 @@ text-align: center;
 #cmimi{
   padding: 10px;
   font-size: 30px;
+}
+
+.footer-poshte ul {
+  margin-left: 30px;
 }
