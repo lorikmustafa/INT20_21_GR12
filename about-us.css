@@ -183,3 +183,12 @@ header {
 p {
     font-family: "freight-text-pro",serif;
 }
+abbr{
+    text-decoration: underline;
+}
+mark{
+    background-color: #fe4365;
+}
+#magazine{
+    font-style: italic;
+}
