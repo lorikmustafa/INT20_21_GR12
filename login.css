@@ -1,107 +1,15 @@
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-input[type="text"] , input[type="password"] {
-    margin: 8px 0px;
-    padding: 7.5px;
-    width: 100%;
-    border-radius: 4px;
-    border-color: rgba(6, 87, 6, 0.781);
-}
-button[type="submit"] {
-    padding: 10px;
-    width: 100%;
-    background-color: rgba(6, 87, 6, 1);
-    border-radius: 4px;
-    border-color: rgba(6, 87, 6, 0.781);
-}
-input[type="checkbox"] {
-    background-color: rgba(6, 87, 6, 0.781);
-}
-.content{
-    font-size: 21px;
-    font-weight: bold;
-}
-fieldset {
-    padding: 10px;
-    text-align: center;
-    width:350px;
-    margin: 10px;
-    border-style: solid ;
-    border-width: medium;
-    border-color: rgba(6, 87, 6, 0.781);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 120px;
-    line-height: 25px;
-}
-legend {
-    font-size: 30px;
-}
-a:hover{
-    color:green;
-}
-a:visited {
-    color : purple;
-}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-body {
-    background-color: hsl(266, 64%, 96%);
-    padding-top: 100px;
-}
-
-h1 {
-    margin-bottom: 10px;
-}
-.permbajtja p {
-    margin-bottom: 40px;
-}
-.input-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.input-row .input-group {
-    flex-basis: 45% ;
-}
-input {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    padding-bottom: 5px;
-}
-
-h1 {
-    color: #100020;
-    font-size: 40px;
-}
-
-button {
-    background: #fe4365;
-    width: 100px;
-    border: none;
-    outline: none;
-    color : #fff;
-    height: 35px;
-    border-radius: 30px;
-    margin-top: 20px;
-    box-shadow: 0px 5px 15px 0px rgba(181, 0, 127, 0.3);
-    text-align: center;
-    margin-left: 40%;
-}
-
-button:hover {
-    color : #100020;
-}
-header {
+  }
   
+  body {
+    background-color: hsl(266, 64%, 96%);
+    /* background-color:antiquewhite; */
+    padding-top: 100px;
+  }
+  header {
     display: flex;
     align-items: center;
     padding: 15px 5%;
@@ -110,14 +18,16 @@ header {
     width: 100%;
     background-color: #fe4365;
   }
-
-.logo {
-      padding: 0;
+  
+  .logo {
+    padding: 0;
     margin-right: auto;
   }
   #logoja {
-     margin: auto;
-    width: 130px;
+    margin: auto;
+    /* width: 130px;
+    height: 45px; */
+    width: auto;
     height: 45px;
   }
   .nav_linqet {
@@ -140,7 +50,15 @@ header {
   .nav_linqet li a:hover {
     color: #100020;
   }
-  
+
+
+
+
+
+
+
+
+
   footer{
     position: relative;
     bottom: 0;
@@ -200,34 +118,8 @@ header {
     text-align: center;
 }
 .footer-poshte p{
+    
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-}
-
-.fotoPermbajtja{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
-
-#fotoPermbajtja{
-    width: 40%;
-    height: auto;
-    margin-left: auto;
-}
-
-.p_permbajtja{
-    padding-top: 40px;
-    margin-left: 10px;
-    padding-left: 50px;
-    width: 50%;
-    margin-right: auto;
-    line-height: 25pt;
-
-}
-p {
-    font-family: "freight-text-pro",serif;
 }
