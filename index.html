@@ -14,8 +14,8 @@
         <a class="logo" href="index.html"><img src="Images/logo.png" id="logoja" alt="Logo"></a>
         <nav>
             <ul class="nav_linqet">
-                <li><a href="index.html">Home</a></li>
-                <!-- <li><a href="products.html">Products</a></li> -->
+                <li><a href="index.html" style="border-bottom:2px solid white; padding-bottom: 2px;">Home</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Log In</a></li>
@@ -28,12 +28,12 @@
         <div class="banner">
             <p id="bannerTitle">Gloss Bomb Heat</p>
             <p id="bannerContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, qui?</p>
-            <button id="buttonShop">Shop Now</button>
+            <div id="buttonShopdiv"><a href="#tabela"><button id="buttonShop">Shop Now</button></a></div>
         </div>
         <img src="Images/banner/banner2.png" id="bannerFoto2">
     </div>
 
-    <table border="0px" class="tabela">
+    <table border="0px" class="tabela" id="tabela">
         <tr>
             <td><img src="Images/1.png" id="pfoto"></td>
             <td><img src="Images/2.png" id="pfoto"></td>
@@ -85,6 +85,8 @@
             <td><input type="button" value="Add to cart" id="button"></td>
         </tr>
     </table>
+
+    <div id="buttonDiv"><a href="products.html"><button id="buttonMore">Show all products</button></a></div>
 
     <footer>
         <div class="footer-permbajtja">
@@ -139,7 +141,7 @@
                 
             </div>
         </div>
-        <p style="text-align: center; margin-top: 70px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+        <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
     </footer>
 
 

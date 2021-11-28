@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -297,12 +305,12 @@ table{
 #bannerFoto1 {
   float: left;
   height: 700px;
-  width: 30%;
+  width: 33.33%;
 }
 #bannerFoto2 {
   float: right;
   height: 700px;
-  width: 30%;
+  width: 33.33%;
 }
 
 div.bannerPhotos{
@@ -336,18 +344,51 @@ div.bannerPhotos{
 }
 
 #buttonShop{
-margin-top: 10px;
-margin-left: 150px;
+/* margin-top: 10px;
+margin-left: 150px; */
+margin-top: 20px;
+text-align: center;
 border: 1px solid black;
 border-radius: 5px;
-width: 25%;
+width: 100px;
 height: 35px;
 background: #100020;
 color : #fff;
-text-align: center;
+font-size: 13pt;
+}
+
+#buttonShopdiv{
+  width: 33%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 #cmimi{
   padding: 10px;
   font-size: 30px;
 }
+
+#buttonMore{
+margin-top: 10px;
+/* margin-left: auto; */
+border: 1px solid black;
+border-radius: 5px;
+width: 30%;
+height: 40px;
+background: #100020;
+color : #fff;
+text-align: center;
+font-size: 14pt;
+}
+
+#buttonDiv{
+  width: 700px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* margin-left: auto; */
+}
+
