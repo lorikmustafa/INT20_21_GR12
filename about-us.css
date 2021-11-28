@@ -112,15 +112,11 @@ footer{
   width: 100vw;
   font-family: "Open Sans";
   padding-top: 40px;
-  /* color: #fff; */
   color: #c0c0c0;
   display: block;
 }
 .footer-permbajtja{
-  /* align-items: center; */
-  /* justify-content: center; */
   flex-direction: column;
-  /* text-align: center; */
   justify-content: space-between;
 }
 .div-rreshti{
@@ -131,17 +127,13 @@ flex-wrap: wrap;
   margin-left: 10px;
 }
 .footer-logo{
-/* width: 33.33%; */
 margin-left: 10px;
 }
 .footer-mes{
 margin-left: 100px;
 margin-top: 20px;
-/* margin-right: 30px; */
 line-height: 22pt;
 justify-content: center;
-/* width: 33.33%; */
-/* width: 20%; */
 }
 .footer-mes li a:hover{
   color:#fe4365;
@@ -183,7 +175,6 @@ margin-left: 20px;
   line-height: 3rem;
 }
 #logojafooter {
-/* margin-left: 20px; */
 margin-left: 40px;
 height: 70px; 
 width: auto;
@@ -196,8 +187,6 @@ margin-bottom: 10px;
 .socials{
   list-style: none;
   display: flex;
-  /* align-items: left; */
-  /* justify-content: center; */
   margin: 0px 5px 0px 50px;
   
 }
@@ -292,7 +281,6 @@ p span{
 }
 
 td{
-  /* margin-left: 20px; */
   padding-right: 50px;
   padding-left: 0px;
 }
@@ -300,9 +288,7 @@ td{
 #data2{
   padding-left: 50px;
   margin-left: 10px;
-  /* padding-right: 50px; */
   line-height: 25pt;
-  /* marg: ; */
 }
 
 #data1{
@@ -310,7 +296,6 @@ td{
   margin-left: 10px;
   padding-bottom: 20px;
   line-height: 25pt;
-  /* padding-right: 50px;   */
 }
 
 table{
