@@ -318,3 +318,14 @@ table{
   border-style:ridge;
   border-color:blanchedalmond ;
 }
+
+.p_paragrafi:first-letter {
+  float:left;
+  font-weight: bold;
+  font-size: 80px;
+  font-size: 8rem;
+  line-height: 40px;
+  line-height: 4rem;
+  height:4rem;
+  text-transform: uppercase;
+}
