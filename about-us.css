@@ -312,3 +312,9 @@ td{
   line-height: 25pt;
   /* padding-right: 50px;   */
 }
+
+table{
+  border: blanchedalmond;
+  border-style:ridge;
+  border-color:blanchedalmond ;
+}
