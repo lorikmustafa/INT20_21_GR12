@@ -205,6 +205,7 @@ margin-left: 20px;
   line-height: 15px;
   font-size: 16px;
 } */
+
 #logojafooter {
 /* margin-left: 20px; */
 margin-left: 40px;
@@ -212,6 +213,9 @@ height: 70px;
 width: auto;
 height: 80px;
 margin-bottom: 10px;
+}
+.footer-poshte ul {
+  margin-left: 30px;
 }
 .socials{
   list-style: none;
@@ -346,8 +350,4 @@ text-align: center;
 #cmimi{
   padding: 10px;
   font-size: 30px;
-}
-
-.footer-poshte ul {
-  margin-left: 30px;
 }

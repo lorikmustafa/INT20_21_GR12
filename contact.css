@@ -103,7 +103,6 @@ tr {
     border-bottom: 1px solid white;
 }
 header {
-  
     display: flex;
     align-items: center;
     padding: 15px 5%;
@@ -112,14 +111,16 @@ header {
     width: 100%;
     background-color: #fe4365;
   }
-
-.logo {
+  
+  .logo {
     padding: 0;
     margin-right: auto;
   }
   #logoja {
     margin: auto;
-    width: 130px;
+    /* width: 130px;
+    height: 45px; */
+    width: auto;
     height: 45px;
   }
   .nav_linqet {
@@ -142,67 +143,116 @@ header {
   .nav_linqet li a:hover {
     color: #100020;
   }
-
-footer{
+  footer{
+    margin-top: 90px;
     position: relative;
     bottom: 0;
     left: 0;
     right: 0;
     background: #100020;
-    height: auto;
+    height: 400px;
     width: 100vw;
     font-family: "Open Sans";
     padding-top: 40px;
-    color: #fff;
-}
-.footer-permbajtja{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* color: #fff; */
+    color: #c0c0c0;
+    display: block;
+  }
+  .footer-permbajtja{
+    /* align-items: center; */
+    /* justify-content: center; */
     flex-direction: column;
-    text-align: center;
-}
-.footer-permbajtja h3{
+    /* text-align: center; */
+    justify-content: space-between;
+  }
+  .div-rreshti{
+  justify-content: space-between;
+  display: flex!important;
+  flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .footer-logo{
+  /* width: 33.33%; */
+  margin-left: 10px;
+  }
+  .footer-mes{
+  margin-left: 100px;
+  margin-top: 20px;
+  /* margin-right: 30px; */
+  line-height: 22pt;
+  justify-content: center;
+  /* width: 33.33%; */
+  /* width: 20%; */
+  }
+  .footer-mes li a:hover{
+    color:#fe4365;
+  }
+  
+  footer li a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #c0c0c0;
+    text-decoration: none;
+  }
+  footer li{
+    list-style: none;
+  }
+  .footer-poshte {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Open Sans";
+  color: #c0c0c0;
+  }
+  .footer-djatht {
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 100px;
+  }
+  .footer-djatht a{
+    color: #fe4365;
+  }
+  span::before {
+  box-sizing: border-box;
+  }
+  
+  .footer-permbajtja h3{
+  margin-left: 20px;
+    text-align: left;
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
-}
-.footer-permbajtja p{
-    margin: 10px auto;
-    line-height: 15px;
-    font-size: 16px;
-}
-.socials{
+  }
+  #logojafooter {
+  /* margin-left: 20px; */
+  margin-left: 40px;
+  height: 70px; 
+  width: auto;
+  height: 80px;
+  margin-bottom: 10px;
+  }
+  .footer-poshte ul {
+    margin-left: 30px;
+  }
+  .socials{
     list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 5px 0px;
-
-}
-.socials li{
-    margin: 10px 10px 10px;
-}
-.socials a{
+    /* align-items: left; */
+    /* justify-content: center; */
+    margin: 0px 5px 0px 50px;
+    
+  }
+  .socials li{
+    margin: 10px 15px 10px;
+  }
+  .socials a{
     text-decoration: none;
-    color: #fff;
-}
-.socials a i{
-    font-size: 1.1rem;
-}
-.socials a:hover i{
+    color: #c0c0c0;
+  }
+  .socials a i{
+    font-size: 2.2rem;
+  }
+  .socials a:hover i{
     color: #fe4365;
-}
-
-.footer-poshte{
-    background: #100020;
-    width: 100vw;
-    padding:  8px 0;
-    text-align: center;
-}
-.footer-poshte p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-}
+  }
