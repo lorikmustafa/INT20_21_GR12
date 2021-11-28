@@ -1,6 +1,8 @@
 # INT20_21_GR2
 Projekti nga lënda Interneti - FIEK - 2021
 
+[Rexona Cosmetics](https://rexonacosmetics.netlify.app 'Rexona Cosmetics')
+
 Ky projekt eshte nje web faqe e cila eshte dhene si detyre nga profesoret perkates te lendes "INTERNETI" ne FIEK.
 Ne kete projekt do te perdorim HTML 5, CSS 3, JavaScript. Por meqe projekti eshte dhene te punohet ne faza atehere do te kemi 3 faza punuese.
 
