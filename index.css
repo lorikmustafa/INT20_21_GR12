@@ -260,7 +260,9 @@ margin-bottom: 10px;
 #pershkrimi-produkt{
   margin: 40px;
   text-align: center;
-  font-family: "Georgia";
+  /* font-family: "Georgia"; */
+  font-family: 'BrownMedium';
+  font-size: 22px;
   color: #100020;
   margin-bottom:  40px;
 }
@@ -268,7 +270,8 @@ margin-bottom: 10px;
 #pershkrimi-prodhus{
   margin: 40px;
   text-align: center;
-  font-family: "Helvetica";
+  /* font-family: "Helvetica"; */
+  font-family: 'BrownLight';
   font-size: 12px;
   color: #29282b;
   margin-bottom:  40px;
@@ -329,18 +332,17 @@ div.bannerPhotos{
   line-height: 36px;
   text-align: center;
   color: #100020;
-  font-family: "Brown", sans-serif;
-  padding-bottom: 20px;
+  font-family: 'BrownRegular', sans-serif;
   font-weight: normal;
+  padding-bottom: 20px;
 }
 #bannerContent{
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   color: #100020;
-  font-family: "Brown", sans-serif;
-  font-weight:400;
-
+  font-family: 'BrownLight';
+  font-weight: lighter;
 }
 
 #buttonShop{
@@ -355,6 +357,7 @@ height: 35px;
 background: #100020;
 color : #fff;
 font-size: 13pt;
+font-family: 'BrownMedium';
 }
 
 #buttonShopdiv{
@@ -381,6 +384,8 @@ background: #100020;
 color : #fff;
 text-align: center;
 font-size: 14pt;
+font-family: 'BrownMedium';
+
 }
 
 #buttonDiv{

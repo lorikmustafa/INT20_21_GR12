@@ -299,50 +299,7 @@ table{
   margin-bottom: 30px; 
   text-align: center;
 }
-.bannerPhotos{
-  display: flex;
-}
 
-#bannerFoto1 {
-  float: left;
-  height: 700px;
-  width: 30%;
-}
-#bannerFoto2 {
-  float: right;
-  height: 700px;
-  width: 30%;
-}
-
-div.bannerPhotos{
-  background-color:rgba(250, 235, 215, 0.537);
-  margin-top: -21px ;
-}
-
-.banner {
-  width: 40%;
-  margin: auto;
-  padding: 130px 130px;
-}
-
-#bannerTitle{
-  font-size: 34px;
-  line-height: 36px;
-  text-align: center;
-  color: #100020;
-  font-family: "Brown", sans-serif;
-  padding-bottom: 20px;
-  font-weight: normal;
-}
-#bannerContent{
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  color: #100020;
-  font-family: "Brown", sans-serif;
-  font-weight:400;
-
-}
 
 #buttonShop{
 margin-top: 10px;
