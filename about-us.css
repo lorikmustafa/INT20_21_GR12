@@ -1,3 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -207,19 +215,13 @@ margin-bottom: 10px;
   color: #fe4365;
 }
 
-.about{
-    display: flex;
-    width: 100%;
-    height: auto;
-    margin-bottom: 100px;
-    margin-top: 30px;
-}
 
 #fotoPermbajtja{
     width: 40%;
     height: auto;
     margin-left: auto;
 }
+
 
 .p_permbajtja{
     padding-top: 40px;
@@ -258,6 +260,7 @@ dl dd{
     border-style:double;
     border-color: #fe4365;
     background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp);
+    margin-right: 20px;
 }
 dt{
     font-weight: 640;
@@ -269,4 +272,43 @@ p span{
 #video{
     text-decoration: none;
     color: inherit;
+}
+
+.about{
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.imgtd{
+  width: auto;
+  height: 650px;
+  margin-left: 20px;
+}
+
+#fototd{
+  width: 33.33%;
+}
+
+td{
+  /* margin-left: 20px; */
+  padding-right: 50px;
+  padding-left: 0px;
+}
+
+#data2{
+  padding-left: 50px;
+  margin-left: 10px;
+  /* padding-right: 50px; */
+  line-height: 25pt;
+  /* marg: ; */
+}
+
+#data1{
+  padding-left: 50px;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  line-height: 25pt;
+  /* padding-right: 50px;   */
 }
