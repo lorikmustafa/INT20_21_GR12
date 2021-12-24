@@ -24,6 +24,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #fe4365;
+  z-index: 1;
 }
 
 .logo {
@@ -159,12 +160,16 @@ margin-bottom: 10px;
   color: #fe4365;
 }
 
-#pfoto {
+.pfoto {
   margin: 50px 50px 50px 50px;
   width: auto;
   height: 500px;
   border-radius: 25px;
   border: 1px solid white;
+  transition: transform 0.25s;
+}
+.pfoto:hover{
+  transform: scale(1.03);
 }
 
 #pershkrimi-produkt{
@@ -207,6 +212,11 @@ table{
   margin-top: 10px;
   margin-bottom: 30px; 
   text-align: center;
+  transition: transform 0.3s;
+}
+#button:hover{
+  transform: translate(-2px, -2px);
+
 }
 
 

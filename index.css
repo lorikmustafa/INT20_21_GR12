@@ -24,6 +24,7 @@ header {
   top: 0;
   width: 100%;
   background-color: #fe4365;
+  z-index: 1; /* pas scaling kartes i rritet z-indexi (dimensioni z) dhe del para headerit */
 }
 
 .logo {
@@ -52,8 +53,17 @@ header {
   
 }
 
+@keyframes bottomboder {
+  0%   {border-bottom:2px solid black;}
+  25%  {border-bottom:2px solid #fe4365;}
+  100% {border-bottom:2px solid black;}
+  
+}
+
 .nav_linqet li a:hover {
   color: #100020;
+  animation: bottomboder 0.5s;
+  animation-play-state: running;
 }
 
 footer{
@@ -161,12 +171,17 @@ margin-bottom: 10px;
 }
 
 
-#pfoto {
+.pfoto {
   margin: 50px 50px 50px 50px;
   width: auto;
   height: 500px;
   border-radius: 25px;
   border: 1px solid white;
+  transition: transform 0.25s;
+}
+
+.pfoto:hover{
+  transform: scale(1.03);
 }
 
 #pershkrimi-produkt{
@@ -190,7 +205,7 @@ td {
   line-height: 25px;
   background-color: hsl(266, 64%, 96%);
 }
-.tabela{
+#tabela{
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
@@ -199,7 +214,7 @@ table{
   border-spacing: 5px;
 }
 
-#button {
+.button {
   background: #fe4365;
   width: 100px;
   border: none;
@@ -210,6 +225,11 @@ table{
   margin-top: 10px;
   margin-bottom: 30px; 
   text-align: center;
+  transition: transform 0.3s;
+}
+.button:hover{
+  transform: translate(-2px, -2px);
+
 }
 .bannerPhotos{
   display: flex;
@@ -266,6 +286,10 @@ background: #100020;
 color : #fff;
 font-size: 13pt;
 font-family: 'BrownMedium';
+transition: transform 0.5s;
+}
+#buttonShop:hover{
+  transform: rotateX(360deg);
 }
 
 #buttonShopdiv{
@@ -275,6 +299,7 @@ font-family: 'BrownMedium';
   margin-right: auto;
   text-align: center;
 }
+
 
 #cmimi{
   padding: 10px;
@@ -292,7 +317,24 @@ color : #fff;
 text-align: center;
 font-size: 14pt;
 font-family: 'BrownMedium';
+transition: transform 1s;
+background-color: #100020;
+animation: animacioniINT 5s;
+animation-play-state: running;
+animation-iteration-count: 100;
+}
 
+@keyframes animacioniINT {
+  0%   {background-color: #100020;}
+  25%  {background-color: #fe4365;border-color: #fe4365;}
+  50%  {background-color: #100020;border-color: #100020}
+  75%  {background-color: #fe4365;border-color: #fe4365}
+  100% {background-color: #100020;}
+  
+}
+
+#buttonMore:hover{
+  transform: rotateY(360deg);
 }
 
 #buttonDiv{

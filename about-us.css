@@ -300,3 +300,17 @@ table{
   line-height: 1rem;
   text-transform: uppercase;
 }
+
+.test{
+  height: 300px;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+}
+
+#leftSVG{
+  margin: 10px 0 0 40px;
+}
+
+#rightSVG{
+  margin: 10px 0 0 100px;
+}
