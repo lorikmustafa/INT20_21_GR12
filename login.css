@@ -15,10 +15,14 @@ html,body{
 body {
   margin: 0;
   padding: 0;
-  background: url(Images/background.png) no-repeat;
+  padding-top: 100px;
+  background: url(Images/background.png);
   background-size: cover;
   background-attachment: fixed;    
-  padding-top: 100px;
+  background-clip: border-box ;
+  background-repeat: no-repeat;
+  background-origin:content-box; /* nuk ndryshon asgje pasi qe background-attachment: eshte fixed; */
+
 }
 header {
   display: flex;

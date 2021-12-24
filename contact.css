@@ -185,6 +185,10 @@ header {
   }
   .footer-mes li a:hover{
     color:#fe4365;
+    text-decoration: underline;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
   footer li a {
@@ -250,4 +254,7 @@ header {
   }
   .socials a:hover i{
     color: #fe4365;
+  }
+  #hijezim {
+    text-shadow: 5px 5px 5px red;
   }

@@ -122,6 +122,10 @@ justify-content: center;
 }
 .footer-mes li a:hover{
   color:#fe4365;
+  text-decoration: underline;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer li a {
@@ -243,6 +247,11 @@ dt{
 p span{
     background-color: #fe4365;
     font-size: 20px;
+    outline-style: solid;
+    outline-color: #100020;
+    outline-width: 1px;
+    outline-offset: 0px;
+    background-image: linear-gradient(red,yellow,green);
 }
 #video{
     text-decoration: none;
@@ -282,6 +291,7 @@ td{
   margin-left: 10px;
   padding-bottom: 20px;
   line-height: 25pt;
+  background-image: radial-gradient(circle 150px ,red,yellow,hsl(266, 64%, 96%));
 }
 
 table{

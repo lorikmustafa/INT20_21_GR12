@@ -102,6 +102,10 @@ justify-content: center;
 }
 .footer-mes li a:hover{
   color:#fe4365;
+  text-decoration: underline;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer li a {
@@ -313,6 +317,7 @@ border-radius: 5px;
 width: 30%;
 height: 40px;
 background: #100020;
+background-clip: border-box;
 color : #fff;
 text-align: center;
 font-size: 14pt;
