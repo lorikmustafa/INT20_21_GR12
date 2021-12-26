@@ -240,3 +240,12 @@ text-align: center;
   padding: 10px;
   font-size: 30px;
 }
+
+td.frame{
+  perspective: 800px;
+}
+.frame{
+  border: 10px solid #fe4365;
+  border-radius: 5px;
+  transform: rotateY(-40deg);
+}
