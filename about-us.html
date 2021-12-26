@@ -5,6 +5,37 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" href="about-us.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <style>
+          .multibg {
+            margin: auto;
+            border: 2px solid #fe4365;
+            width: 1200px;
+            height: 700px;
+            background-image: url(Images/background-1.PNG), url(Images/background-2.PNG);
+            background-size: 600px, 600px;
+            background-position: left , right ;
+            background-repeat: no-repeat, no-repeat;
+        }
+        .multibg h2 {
+            margin-top: 25px;
+            margin-left: 35%;
+            font-size: 50px;
+            color: rgb(48, 48, 48);
+        }
+        canvas {
+            margin-left: 30%;
+            width: 400px;
+            height: 200px;
+        }
+        .sponsor {
+            margin-top: -35px;
+            margin-left: 39%;
+        }
+        #textsponsor {
+            font-style: oblique;
+            font-size: 20pt;
+        }
+    </style>
 
 </head>
 
@@ -26,8 +57,12 @@
         <table class="about">
             <tr>
                 <td rowspan="3" id="fototd">
-                    <img class="imgtd"src="Images/aboutUs/shop.png">
-                    <figcaption style="margin-left: 19px;">Rexona's cosmetics</figcaption>
+                    <img class="imgtd" src="Images/aboutUs/shop.png">
+                    <figcaption style="margin-left: 19px; text-align: center;"><b>Rexona's cosmetics</b></figcaption>
+                    <canvas></canvas>
+                    <div class="sponsor">
+                        <p id="textsponsor"><b>Sponsored by AUDI</b></p>
+                    </div>
                 </td>
                 <td class="p_permbajtja">
                     <article>
@@ -83,10 +118,14 @@
     </section>
 
     
-    <div class="test">
-
-
+    <div class="multibg">
+        <h2>WHAT WE OFFER!</h2>
     </div>
+
+
+    <script src="canvas.js">
+    </script>
+
     <footer>
         <div class="footer-permbajtja">
             <div class="div-rreshti">
@@ -96,7 +135,6 @@
                     <p><b>We offer to you the best cosmetic products!</b></p>
 
                     <div class="footer-poshte">
-
                         <p style="font-family: Open Sans; font-size: 1.5em; ">Follow Us</p>
                         <ul class="socials">
                             <li><a href="https://example.com"><i class="fa fa-facebook fa-2x"></i></a></li>
@@ -111,7 +149,7 @@
 
                 <div class="footer-mes">
                     <h2>Navigation</h2>
-                    <br>
+                    
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -123,16 +161,16 @@
 
                 <div class="footer-djatht">
                     <h2>Contact Us</h2>
-                    <br>
+                    
                     <p>
                         <a href="mailto:rexona@costumerservice.com" title="mailto:rexona@costumerservice.com">
                             rexona@costumerservice.com</a>
                     </p>
-                    <br>
+                    
                     <p><a href="tel:(+383)049318620" title="tel:18554407474">+1-855-440-7474</a></p>
-                    <br>
+                    
                     <p>Prishtine, Kosove</p>
-                    <br>
+                    
                     <p class="orari">Operating hours are from 7am – 2am EST,
                         <br>7 days a week, excluding holidays
                     </p>
@@ -141,7 +179,8 @@
 
             </div>
         </div>
-        <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+                    <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+
     </footer>
 
 </body>

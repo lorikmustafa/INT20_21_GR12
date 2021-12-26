@@ -5,7 +5,11 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" type="text/css" href="login.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
-
+    <style>
+        canvas {
+            margin-top:-20px ;
+        }
+    </style>
 </head>
 
 <body>
@@ -37,7 +41,25 @@
 
         <a href="index.html"><input class="button" type="button" name="button" value="Sign In"></a>
     </div>
+    <canvas id="DemoCanvas" width="1240" height="960"></canvas>
+    <script>
+    var canvas = document.getElementById("DemoCanvas");
+    var context = canvas.getContext("2d");
 
+    context.fillStyle   = 'transparent';
+    context.strokeStyle = 'white';
+    context.lineWidth   = 2;
+    context.beginPath();
+
+    context.moveTo(0, 0);
+    context.lineTo(1240, 0);
+    context.lineTo(0, 960);
+    context.lineTo(0, 0);
+  
+    context.fill();
+    context.stroke();
+    context.closePath();
+    </script>
 </body>
 
 </html>
