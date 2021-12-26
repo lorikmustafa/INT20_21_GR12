@@ -4,6 +4,12 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" href="contact.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <style>
+        canvas {
+            margin-top: -60px;
+            margin-left: 170px;
+        }
+    </style>
 
 </head>
 <body>
@@ -81,6 +87,10 @@
         </div>
     </div>
 
+    <canvas id="myCanvas" width="1750px" height="100"></canvas>
+
+    
+
     <footer>
         <div class="footer-permbajtja">
             <div class="div-rreshti">
@@ -139,7 +149,17 @@
     </footer>
 
 
+    <script>
+        var d = document.getElementById("myCanvas");
+        var content = d.getContext("2d");
 
+        var gradient = content.createLinearGradient(0, 10, 1000, 300);
+        gradient.addColorStop(0, "white");
+        gradient.addColorStop(1, "#fe4365");
+
+        content.fillStyle = gradient;
+        content.fillRect(10, 10, 1433, 80);
+    </script>
 </body>
 
 </html>
