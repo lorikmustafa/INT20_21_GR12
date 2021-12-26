@@ -245,7 +245,7 @@ table{
   transition: transform 0.3s;
 }
 .button:hover{
-  transform: translate(-2px, -2px);
+  transform: translate(-3px, -3px);
 
 }
 .bannerPhotos{
