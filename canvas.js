@@ -12,17 +12,21 @@ c.lineWidth=8;
 c.strokeStyle="#000000";
 c.stroke();
 
+
 c.beginPath();
 c.arc(170, 70, 43, 0, 2 * Math.PI);
 c.lineWidth=8;
 c.strokeStyle="#000000";
 c.stroke();
 
+
 c.beginPath();
 c.arc(225, 70, 43, 0, 2 * Math.PI);
 c.lineWidth=8;
 c.strokeStyle="#000000";
 c.stroke();
+c.closePath();
+
 
 
 //c.fillRect(100,100,100,100);
