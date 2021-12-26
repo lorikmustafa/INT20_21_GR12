@@ -72,24 +72,32 @@ footer{
   display: block;
 }
 .footer-permbajtja{
+  margin-bottom: -60px;
   flex-direction: column;
   justify-content: space-between;
 }
 .div-rreshti{
-justify-content: space-between;
-display: flex!important;
-flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex!important;
+  flex-wrap: wrap;
   margin-right: 10px;
   margin-left: 10px;
 }
 .footer-logo{
-margin-left: 10px;
+  margin-left: 140px;
+  margin-top: 20px;
+}
+.footer-logo p{
+  line-height: 35pt;
 }
 .footer-mes{
-margin-left: 100px;
-margin-top: 20px;
-line-height: 22pt;
-justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  line-height: 33pt;
+  justify-content: center;
+}
+.footer-mes h2 {
+  line-height: 29pt;
 }
 .footer-mes li a:hover{
   color:#fe4365;
@@ -109,25 +117,31 @@ footer li{
   list-style: none;
 }
 .footer-poshte {
-text-align: center;
-margin-top: 60px;
-font-family: "Open Sans";
-color: #c0c0c0;
+  text-align: center;
+  font-family: "Open Sans";
+  color: #c0c0c0;
+}
+.footer-poshte ul li {
+  line-height: 60pt;
 }
 .footer-djatht {
-margin-left: 10px;
-margin-top: 20px;
-margin-right: 100px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 140px;
+}
+.footer-djatht p {
+  line-height: 35pt;
 }
 .footer-djatht a{
   color: #fe4365;
 }
+
 span::before {
 box-sizing: border-box;
 }
 
 .footer-permbajtja h3{
-margin-left: 20px;
+  margin-left: 20px;
   text-align: left;
   font-size: 1.8rem;
   font-weight: 400;
