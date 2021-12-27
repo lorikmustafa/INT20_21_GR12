@@ -26,9 +26,21 @@
         </nav>
     </header>
 
+    <script>
+        function validateForm() {
+  let x = document.forms["login"]["username"].value;
+  let y = document.forms["login"]["password"].value;
+  if (x == "" || y == "") {
+    alert("Username and password must be filled out");
+    return false;
+  }
+}
+    </script>
+
     <div class="login-box">
         <h1>Login</h1>
         <div class="text-box">
+            <form action="/action_page.php" name="login" onsubmit="return validateForm()" method="post" >
             <i class="fa fa-user" aria-hidden="true"></i>
             <input type="text" placeholder="Username" name="username" value="">
         </div>
@@ -39,7 +51,8 @@
         </div>
         <input type="checkbox" name=" Remeber Me" value=""> Remember Me
 
-        <a href="index.html"><input class="button" type="button" name="button" value="Sign In"></a>
+        <a href="index.html"><input class="submit" type="submit" name="submit" value="Sign In"></a>
+    </form>
     </div>
     <canvas id="DemoCanvas" width="1240" height="960"></canvas>
     <script>
