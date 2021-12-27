@@ -28,9 +28,9 @@
 
     <script>
         function validateForm() {
-  let x = document.forms["login"]["username"].value;
-  let y = document.forms["login"]["password"].value;
-  if (x == "" || y == "") {
+    let x = document.forms["login"]["username"].value;
+    let y = document.forms["login"]["password"].value;
+    if (x == "" || y == "") {
     alert("Username and password must be filled out");
     return false;
   }
@@ -40,7 +40,7 @@
     <div class="login-box">
         <h1>Login</h1>
         <div class="text-box">
-            <form action="/action_page.php" name="login" onsubmit="return validateForm()" method="post" >
+            <form action="products.html" name="login" onsubmit="return validateForm()" method="post" >
             <i class="fa fa-user" aria-hidden="true"></i>
             <input type="text" placeholder="Username" name="username" value="">
         </div>
