@@ -289,3 +289,9 @@ text-align: center;
 #promotion:hover{
   transform: rotateZ(360deg);
 }
+
+.video{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
