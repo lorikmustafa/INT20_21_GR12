@@ -83,9 +83,19 @@ header {
   
 }
 
+@keyframes bottomboder {
+  0%   {border-bottom:2px solid black;}
+  25%  {border-bottom:2px solid #fe4365;}
+  100% {border-bottom:2px solid black;}
+  
+}
+
 .nav_linqet li a:hover {
   color: #100020;
+  animation: bottomboder 0.5s;
+  animation-play-state: running;
 }
+
 footer{
   margin-top: 90px;
   position: relative;
@@ -251,9 +261,21 @@ dl dd{
 #dl{
     border-style:double;
     border-color: #fe4365;
-    background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp);
+    /* background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp); */
     margin-right: 20px;
+    animation: animacioniBackground 3s;
+    animation-play-state: running;
+    animation-iteration-count: 10;
 }
+
+@keyframes animacioniBackground {
+  0%   {background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp);}
+  25%  {background-image: url(Images/background-1.PNG);}
+  50%  {background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp);}
+  75%  {background-image: url(Images/background-1.PNG);}
+  100% {background-image: url(Images/FB159500-FB-Gift-Guide-Desktop_1_1400x.webp);}
+}
+
 dt{
     font-weight: 640;
 }
@@ -322,4 +344,21 @@ table{
   line-height: 10px;
   line-height: 1rem;
   text-transform: uppercase;
+}
+
+
+.bottomDescription {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  column-count: 2;
+  column-gap: 66px;
+  margin-top: 20px;
+  font-family: "Brown";
+  color: #100020;
+}
+
+#circle{
+  margin-left:-50px;
+  margin-top: -12px;
 }

@@ -342,12 +342,12 @@ font-size: 14pt;
 font-family: 'BrownMedium';
 transition: transform 1s;
 background-color: #100020;
-animation: animacioniINT 5s;
+animation: animacioniButon 5s;
 animation-play-state: running;
 animation-iteration-count: 100;
 }
 
-@keyframes animacioniINT {
+@keyframes animacioniButon {
   0%   {background-color: #100020;}
   25%  {background-color: #fe4365;border-color: #fe4365;}
   50%  {background-color: #100020;border-color: #100020}

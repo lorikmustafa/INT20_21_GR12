@@ -62,8 +62,16 @@ header {
   
 }
 
+@keyframes bottomboder {
+  0%   {border-bottom:2px solid black;}
+  25%  {border-bottom:2px solid #fe4365;}
+  100% {border-bottom:2px solid black;}
+}
+
 .nav_linqet li a:hover {
   color: #100020;
+  animation: bottomboder 0.5s;
+  animation-play-state: running;
 }
 
 .login-box {
