@@ -35,22 +35,29 @@
                    <div class="input-row" >
                        <div class="input-group">
                         <label>Name</label>
-                        <input type="text" placeholder="Type your name...">
+                        <input type="text" placeholder="Type your name..." size="30" autofocus>
                        </div>
                        <div class="input-group">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="Type your phone number...">
+                        <input type="text" placeholder="Type your phone number..." maxlength="20">
                        </div>
                    </div>
 
                 <div class="input-row" >
                     <div class="input-group">
                         <label>Email</label>
-                        <input type="email" placeholder="Type your email...">
+                        <input type="email" placeholder="Type your email..." value="youremail@example.com" autocomplete="off" required>
                     </div>
                     <div class="input-group">
+                        <form>
                         <label>Subject</label>
-                        <input type="text" placeholder="Write any subject...">
+                        <input list="Subjects" placeholder="Write any subject...">
+                        <datalist id="Subjects">
+                            <option value="Complaint">
+                            <option value="Advice">
+                            <option value="Cooperation">
+                        </datalist>
+                    </form>
                     </div>
                 </div>
 
