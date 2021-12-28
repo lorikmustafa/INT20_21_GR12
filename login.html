@@ -5,9 +5,10 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" type="text/css" href="login.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <script src="js/validateForm.js"></script>
     <style>
         canvas {
-            margin-top:-20px ;
+            margin-top: -20px;
         }
     </style>
 </head>
@@ -26,23 +27,14 @@
         </nav>
     </header>
 
-    <script>
-        function validateForm() {
-    let x = document.forms["login"]["username"].value;
-    let y = document.forms["login"]["password"].value;
-    if (x == "" || y == "") {
-    alert("Username and password must be filled out");
-    return false;
-  }
-}
-    </script>
+    
 
     <div class="login-box">
         <h1>Login</h1>
         <div class="text-box">
-            <form action="products.html" name="login" onsubmit="return validateForm()" method="post" >
-            <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Username" name="username" value="">
+            <form action="products.html" name="login" onsubmit="return validateForm()" method="post">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <input type="text" placeholder="Username" name="username" value="">
         </div>
 
         <div class="text-box">
@@ -52,26 +44,26 @@
         <input type="checkbox" name=" Remeber Me" value=""> Remember Me
 
         <a href="index.html"><input class="submit" type="submit" name="submit" value="Sign In"></a>
-    </form>
+        </form>
     </div>
     <canvas id="DemoCanvas" width="1240" height="960"></canvas>
     <script>
-    var canvas = document.getElementById("DemoCanvas");
-    var context = canvas.getContext("2d");
+        var canvas = document.getElementById("DemoCanvas");
+        var context = canvas.getContext("2d");
 
-    context.fillStyle   = 'transparent';
-    context.strokeStyle = 'white';
-    context.lineWidth   = 2;
-    context.beginPath();
+        context.fillStyle = 'transparent';
+        context.strokeStyle = 'white';
+        context.lineWidth = 2;
+        context.beginPath();
 
-    context.moveTo(0, 0);
-    context.lineTo(1240, 0);
-    context.lineTo(0, 960);
-    context.lineTo(0, 0);
-  
-    context.fill();
-    context.stroke();
-    context.closePath();
+        context.moveTo(0, 0);
+        context.lineTo(1240, 0);
+        context.lineTo(0, 960);
+        context.lineTo(0, 0);
+
+        context.fill();
+        context.stroke();
+        context.closePath();
     </script>
 </body>
 
