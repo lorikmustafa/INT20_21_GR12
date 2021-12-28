@@ -5,6 +5,7 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" href="about-us.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <script src="js/drag_drop.js"></script>
     <style>
           .multibg {
             margin: auto;
@@ -140,7 +141,12 @@
           Your browser does not support the audio element.
           </audio>
     </div>
+        
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="Images/favicon.ico" draggable="true" ondragstart="drag(event)" width="357" height="302">
+    </div>
     <footer>
         <div class="footer-permbajtja">
             <div class="div-rreshti">

@@ -349,3 +349,7 @@ text-align: center;
     opacity: 1;
   }
 }
+
+#value {
+  font-size: 50px;
+}

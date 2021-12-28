@@ -362,3 +362,10 @@ table{
   margin-left:-50px;
   margin-top: -12px;
 }
+
+#div1 {
+  width : 357px;
+  height : 302px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
