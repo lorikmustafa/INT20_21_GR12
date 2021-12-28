@@ -7,22 +7,31 @@
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
     <script src="products.js"></script>
+    <script>
+        function ndryshoNgjyren(ngjyra) {
+            document.body.style.backgroundColor = ngjyra;
+        }
+    </script>
 </head>
 
 <body>
     <header>
         <a class="logo" href="index.html"><img src="Images/logo.png" id="logoja" alt="Logo"></a>
+        <span onclick="ndryshoNgjyren('black');" style="margin-right:10px; color: #edf0f1; font-size: 16px;">Dark</span>
+        <span onclick="ndryshoNgjyren('hsl(266, 64%, 96%)');" style="color: #edf0f1; font-size: 16px;">Light</span>
         <nav>
             <ul class="nav_linqet">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html" style="border-bottom:2px solid white; padding-bottom: 2px;">Products</a></li>
+                <li><a href="products.html" style="border-bottom:2px solid white; padding-bottom: 2px;">Products</a>
+                </li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Log In</a></li>
             </ul>
         </nav>
     </header>
-    <div class="intro" style="margin-left: 38%; margin-bottom: -35px; font-family:Georgia, 'Times New Roman', Times, serif; letter-spacing: 3px;">
+    <div class="intro"
+        style="margin-left: 38%; margin-bottom: -35px; font-family:Georgia, 'Times New Roman', Times, serif; letter-spacing: 3px;">
         <h1>WE SELL</h1>
         <h1 class="typing"></h1>
     </div>
@@ -55,7 +64,7 @@
             <td><a href="login.html"><input type="button" value="Add to cart" id="button"></a></td>
             <td><a href="login.html"><input type="button" value="Add to cart" id="button"></a></td>
         </tr>
-        
+
 
         <tr>
             <td><img src="Images/luciousslipbalm.webp" class="pfoto"></td>
@@ -87,7 +96,7 @@
             <td><img src="Images/invissimatte_blotting_powder.jpg" class="pfoto"></td>
             <td>
                 <div class="frame">
-                <img src="Images/snapshadow_palette.jpg" class="pfoto" id="promotion">
+                    <img src="Images/snapshadow_palette.jpg" class="pfoto" id="promotion">
                 </div>
             </td>
             <td><img src="Images/pro_filtR_powder.jpg" class="pfoto"></td>
@@ -113,7 +122,7 @@
             <td><a href="login.html"><input type="button" value="Add to cart" id="button"></a></td>
         </tr>
 
-        
+
         <tr>
             <td><img src="Images/4.png" class="pfoto"></td>
             <td><img src="Images/5.png" class="pfoto"></td>
@@ -168,20 +177,20 @@
 
     <video width="700" height="auto" controls class="video">
         <source src="media/vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video> 
+        Your browser does not support the video tag.
+    </video>
 
     <button onclick="njoftimi()" id="buttonalert">AUTHENTICATION!</button>
     <script>
         function njoftimi() {
             alert("You are shopping in REXONA's Official Website!");
-                }
+        }
     </script>
 
 
     <div id="value" onclick='animateValue("value", 100, 0, 5000);'>100</div>
 
-    
+
     <footer>
         <div class="footer-permbajtja">
             <div class="div-rreshti">
@@ -205,7 +214,7 @@
 
                 <div class="footer-mes">
                     <h2>Navigation</h2>
-                    
+
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -217,29 +226,29 @@
 
                 <div class="footer-djatht">
                     <h2>Contact Us</h2>
-                    
+
                     <p>
                         <a href="mailto:rexona@costumerservice.com" title="mailto:rexona@costumerservice.com">
                             rexona@costumerservice.com</a>
                     </p>
-                    
+
                     <p><a href="tel:(+383)049318620" title="tel:18554407474">+1-855-440-7474</a></p>
-                    
+
                     <p>Prishtin&euml;, Kosov&euml;</p>
-                    
+
                     <p class="orari">Operating hours are from 7am – 2am EST,
                         <br>7 days a week, excluding holidays
                     </p>
                 </div>
-                
+
 
             </div>
         </div>
-                    <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+        <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
 
     </footer>
 
-    
+
 </body>
 
 </html>
