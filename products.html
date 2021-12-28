@@ -12,6 +12,30 @@
             document.body.style.backgroundColor = ngjyra;
         }
     </script>
+    <script>
+        const produkti1 = {
+            emriProduktit: "Lil Fly Stunna Plus Lip Set",
+            emriProdhusit: "FENTY & BEAUTY",
+            cmimiProduktit: "$19",
+            stockProdukti: "Is In Stock!"
+        };
+        const produkti2 = {
+            emriProduktit: "Snap Shadow Palette",
+            emriProdhusit: "FENTY & BEAUTY",
+            cmimiProduktit: "$45",
+            stockProdukti: "Is In Stock! Promotion with discount!!"
+        };
+        var tedhenat1 = produkti1.emriProduktit + "\n" + produkti1.emriProdhusit + "\n" + produkti1.cmimiProduktit + "\n" + produkti1.stockProdukti;
+        var tedhenat2 = produkti2.emriProduktit + "\n" + produkti2.emriProdhusit + "\n" + produkti2.cmimiProduktit + "\n" + produkti2.stockProdukti;
+        function shfaqtedhenat1() {
+            1
+            alert("Te dhenat e produktit jane: \n" + tedhenat1);
+        }
+        function shfaqtedhenat2() {
+            1
+            alert("Te dhenat e produktit jane: \n" + tedhenat2);
+        }
+    </script>
 </head>
 
 <body>
@@ -42,7 +66,7 @@
         <tr>
             <td><img src="Images/invisimatte_complete_essentials.jpg" class="pfoto"></td>
             <td><img src="Images/full_volume_liftNcurl.jpg" class="pfoto"></td>
-            <td><img src="Images/lil_fly_stunna_plus_lipset.jpg" class="pfoto"></td>
+            <td><img src="Images/lil_fly_stunna_plus_lipset.jpg" class="pfoto" onclick="shfaqtedhenat()"></td>
         </tr>
         <tr id="pershkrimi-produkt">
             <td style="text-transform: uppercase;">INVISIMATTE COMPLETE ESSENTIALS</td>
@@ -96,7 +120,7 @@
             <td><img src="Images/invissimatte_blotting_powder.jpg" class="pfoto"></td>
             <td>
                 <div class="frame">
-                    <img src="Images/snapshadow_palette.jpg" class="pfoto" id="promotion">
+                    <img src="Images/snapshadow_palette.jpg" class="pfoto" id="promotion" onclick="shfaqtedhenat2()">
                 </div>
             </td>
             <td><img src="Images/pro_filtR_powder.jpg" class="pfoto"></td>
