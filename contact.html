@@ -4,6 +4,7 @@
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" href="contact.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <script src="js/validateContact.js"></script>
     <style>
         canvas {
             margin-top: -60px;
@@ -31,27 +32,27 @@
         <div class="kontakti-kuti">
             <div class="kontakti-majtas">
                 <h3>Send your request</h3>
-                <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST">
+                <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST" name="contact" onsubmit="return validateFormContact()">
                    <div class="input-row" >
                        <div class="input-group">
                         <label>Name</label>
-                        <input type="text" placeholder="Type your name..." size="30" autofocus>
+                        <input name="name" type="text" placeholder="Type your name..." size="30" autofocus>
                        </div>
                        <div class="input-group">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="Type your phone number..." maxlength="20">
+                        <input name="phone" type="text" placeholder="Type your phone number..." maxlength="20">
                        </div>
-                   </div>
+                    </div>
 
-                <div class="input-row" >
+                    <div class="input-row" >
                     <div class="input-group">
                         <label>Email</label>
                         <input type="email" placeholder="Type your email..." value="youremail@example.com" autocomplete="off" required>
                     </div>
                     <div class="input-group">
-                        <form>
+                        <form name="subject">
                         <label>Subject</label>
-                        <input list="Subjects" placeholder="Write any subject...">
+                        <input name="sub" list="Subjects" placeholder="Write any subject...">
                         <datalist id="Subjects">
                             <option value="Complaint">
                             <option value="Advice">
@@ -63,7 +64,7 @@
 
                 <label>Message</label>
                 <textarea rows="5" placeholder="Write your message..."></textarea>
-                <button type="submit">SEND</button>
+                <button type="submit" class="submit" name="submit">SEND</button>
                 </form>
             </div>
 
