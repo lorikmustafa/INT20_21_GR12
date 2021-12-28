@@ -35,6 +35,33 @@
         <img src="Images/banner/banner2.png" id="bannerFoto2">
     </div>
 
+    <div style="margin-bottom: -60px;">
+        <p style="text-align: center; margin-top: 15px; font-size: 18pt; color:#100020">Please input the number of times you have bought at our website!</p>
+        <input id="inputcontent" type="text" style="margin-left: 41.5%; margin-right: 20px; margin-top: 15px; width: 180px; height: 30px; border-radius: 10px;" autofocus>
+        <button type="button" style="width: 100px; height: 30px; border-radius: 10px;" id="button" onclick="myFunction()">Submit</button>
+        <p id="MessageShower"></p>
+    </div>
+    
+        <script>
+            function myFunction() {
+                var message, x;
+                message = document.getElementById("MessageShower");
+                message.innerHTML = "";
+                x = document.getElementById("inputcontent").value;
+                try { 
+                if(x == "")  throw " This input is empty!";
+                if(isNaN(x)) throw " This input is not a number!";
+                x = Number(x);
+                if(x < 0)  throw " This number is not valid!";
+                if(x>0) throw " Thank you for believing in us!"
+    
+                }
+                catch(err) {
+                alert("The input you have put is " + x +"." + err);
+                }
+            }
+        </script>
+
     <table border="0px" id="tabela">
         <tr>
             <td><img src="Images/1.png" class="pfoto"></td>
