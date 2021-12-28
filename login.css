@@ -75,9 +75,9 @@ header {
 }
 
 .login-box {
-width: 250px;
+width: 450px;
 position: absolute;
-top: 40%;
+top: 30%;
 left: 70%;
 color: white;
 }
@@ -127,3 +127,91 @@ color: white;
   cursor: pointer;
   margin: 12px 0;
 }
+
+
+
+  .wrapper{
+    max-width: 485px;
+    width: 100%;
+    background: #fe4365;
+    padding: 22px 30px 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgb(255, 255, 255,0.2);
+  }
+  .wrapper p{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .wrapper .captcha-area{
+    display: flex;
+    height: 55px;
+    margin: 20px 0 20px;
+    justify-content: space-between;
+  }
+  .captcha-area .captcha-img{
+    height: 100%;
+    width: 345px;
+    background: rgb(107, 81, 81);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .captcha-img .captcha{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper button{
+    margin-left: 10px;
+    width: 70px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(107, 81, 81);
+    border-radius: 5px;
+  }
+
+    .captcha-area .reload-button i{
+    transition: transform 0.3s ease;
+  }
+  .captcha-area .reload-button:hover i{
+    transform: rotate(90deg);
+  }
+  .wrapper .input-area{
+    height: 50px;
+  }
+  .input-area input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #bfbfbf;
+  }
+  .input-area .check-button{
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    font-size: 17px;
+    height: 45px;
+    padding: 0 20px;
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  .wrapper .status-text{
+    display: none;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 -5px;
+  }
+ 

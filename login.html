@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Rexona Cosmetics</title>
     <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
     <script src="js/validateForm.js"></script>
     <style>
@@ -43,7 +45,23 @@
 
         <a href="index.html"><input class="submit" type="submit" name="submit" value="Sign In"></a>
         </form>
+        <div class="wrapper">
+            <p>Captcha</p>
+            <div class="captcha-area">
+              <div class="captcha-img">
+                <span class="captcha"></span>
+              </div>
+              <button class="reload-button"><i class="fas fa-redo-alt"></i></button>
+            </div>
+            <form action="#" class="input-area">
+              <input type="text" placeholder="Enter captcha" maxlength="6" spellcheck="false" required>
+              <button class="check-button">Check</button>
+            </form>
+            <div class="status-text"></div>
+          </div>
+          <script src="script.js"></script>
     </div>
+    
     <canvas id="DemoCanvas" width="1240" height="960"></canvas>
     <script>
         var canvas = document.getElementById("DemoCanvas");
