@@ -49,35 +49,35 @@
         <div class="kontakti-kuti">
             <div class="kontakti-majtas">
                 <h3>Send your request</h3>
-                <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST" name="contact"
-                    onsubmit="return validateFormContact()">
+                <!-- <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST" name="contact" -->
+                <form action="products.html" method="POST" name="contact" onsubmit="return validateFormContact()">
                     <div class="input-row">
                         <div class="input-group">
                             <label>Name</label>
-                            <input name="name" type="text" placeholder="Type your name..." size="30" autofocus>
+                            <input id="emri" name="name" type="text" placeholder="Type your name..." size="30" autofocus>
                         </div>
                         <div class="input-group">
                             <label>Phone Number</label>
-                            <input name="phone" type="text" placeholder="Type your phone number..." maxlength="20">
+                            <input id="numri" name="phone" type="text" placeholder="Type your phone number..." maxlength="20">
                         </div>
                     </div>
 
                     <div class="input-row">
                         <div class="input-group">
                             <label>Email</label>
-                            <input type="email" placeholder="Type your email..." value="youremail@example.com"
+                            <input id="email" type="text" placeholder="Type your email..." value="youremail@example.com"
                                 autocomplete="off" required>
                         </div>
                         <div class="input-group">
-                            <form name="subject">
+                            <!-- <form name="subject"> -->
                                 <label>Subject</label>
-                                <input name="sub" list="Subjects" placeholder="Write any subject...">
+                                <input id="subject" name="subject" list="Subjects" placeholder="Write any subject...">
                                 <datalist id="Subjects">
                                     <option value="Complaint">
                                     <option value="Advice">
                                     <option value="Cooperation">
                                 </datalist>
-                            </form>
+                            <!-- </form> -->
                         </div>
                     </div>
 
