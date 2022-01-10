@@ -47,6 +47,7 @@ button:hover {
 }
 header {
   display: flex;
+  z-index: 2;
   align-items: center;
   padding: 15px 5%;
   position: fixed;
@@ -326,7 +327,7 @@ td{
   margin-left: 10px;
   padding-bottom: 20px;
   line-height: 25pt;
-  background-image: radial-gradient(circle 150px ,red,yellow,hsl(266, 64%, 96%));
+  /* background-image: radial-gradient(circle 150px ,red,yellow,hsl(266, 64%, 96%)); */
 }
 
 table{
