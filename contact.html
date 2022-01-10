@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <title>Rexona Cosmetics</title>
@@ -9,10 +10,11 @@
     <style>
         canvas {
             margin-top: -60px;
-            margin-left: 170px;
+            margin-left: 126px;
         }
     </style>
 </head>
+
 <body onload="contactColor()">
     <!-- <script>
             var changing = document.querySelector("body");
@@ -28,91 +30,94 @@
             }
         setInterval(change, 1000);
     </script> -->
-    
+
     <header>
         <a class="logo" href="index.html"><img src="Images/logo.png" id="logoja" alt="Logo"></a>
         <nav>
             <ul class="nav_linqet">
-                <li><a href="index.html";>Home</a></li>
+                <li><a href="index.html" ;>Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html" style="border-bottom:2px solid white; padding-bottom: 2px">Contact</a></li>
                 <li><a href="login.html">Log In</a></li>
             </ul>
         </nav>
-    </header>     
- 
+    </header>
+
     <div class="permbajtja">
         <h1 id="hijezim">Connect With Us</h1>
         <div class="kontakti-kuti">
             <div class="kontakti-majtas">
                 <h3>Send your request</h3>
-                <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST" name="contact" onsubmit="return validateFormContact()">
-                   <div class="input-row" >
-                       <div class="input-group">
-                        <label>Name</label>
-                        <input name="name" type="text" placeholder="Type your name..." size="30" autofocus>
-                       </div>
-                       <div class="input-group">
-                        <label>Phone Number</label>
-                        <input name="phone" type="text" placeholder="Type your phone number..." maxlength="20">
-                       </div>
+                <form action="mailto:lorik.mustafa2@student.uni-pr.edu" method="POST" name="contact"
+                    onsubmit="return validateFormContact()">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input name="name" type="text" placeholder="Type your name..." size="30" autofocus>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input name="phone" type="text" placeholder="Type your phone number..." maxlength="20">
+                        </div>
                     </div>
 
-                    <div class="input-row" >
-                    <div class="input-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="Type your email..." value="youremail@example.com" autocomplete="off" required>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Type your email..." value="youremail@example.com"
+                                autocomplete="off" required>
+                        </div>
+                        <div class="input-group">
+                            <form name="subject">
+                                <label>Subject</label>
+                                <input name="sub" list="Subjects" placeholder="Write any subject...">
+                                <datalist id="Subjects">
+                                    <option value="Complaint">
+                                    <option value="Advice">
+                                    <option value="Cooperation">
+                                </datalist>
+                            </form>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <form name="subject">
-                        <label>Subject</label>
-                        <input name="sub" list="Subjects" placeholder="Write any subject...">
-                        <datalist id="Subjects">
-                            <option value="Complaint">
-                            <option value="Advice">
-                            <option value="Cooperation">
-                        </datalist>
-                    </form>
-                    </div>
-                </div>
 
-                <label>Message</label>
-                <textarea rows="5" placeholder="Write your message..."></textarea>
-                <button type="submit" class="submit" name="submit">SEND</button>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Write your message..."></textarea>
+                    <button type="submit" class="submit" name="submit">SEND</button>
                 </form>
             </div>
 
-           
+
             <div class="kontakti-djathtas">
                 <h3>Reach Us</h3>
                 <address>
-                <table>
-                    <tr>
-                        <td>Company</td>
-                        <td id="name">Rexona Cosmetics</td>
-                    </tr>
-                    
+                    <table>
+                        <tr>
+                            <td>Company</td>
+                            <td id="name">Rexona Cosmetics</td>
+                        </tr>
+
                         <td>Email</td>
                         <td id="email">l@hotmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number</td>
-                        <td id="phone">+38349444555</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td id="location">Prishtine, Kosovo</td>
-                    </tr><tr>
-                </table>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td id="phone">+38349444555</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td id="location">Prishtine, Kosovo</td>
+                        </tr>
+                        <tr>
+                    </table>
                 </address>
             </div>
         </div>
     </div>
 
-    <canvas id="myCanvas" width="1750px" height="100"></canvas>
+    <canvas id="myCanvas" width="1087px" height="100"></canvas>
 
-    
+
 
     <footer>
         <div class="footer-permbajtja">
@@ -137,7 +142,7 @@
 
                 <div class="footer-mes">
                     <h2>Navigation</h2>
-                    
+
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -149,16 +154,16 @@
 
                 <div class="footer-djatht">
                     <h2>Contact Us</h2>
-                    
+
                     <p>
                         <a href="mailto:rexona@costumerservice.com" title="mailto:rexona@costumerservice.com">
                             rexona@costumerservice.com</a>
                     </p>
-                    
+
                     <p><a href="tel:(+383)049318620" title="tel:18554407474">+1-855-440-7474</a></p>
-                    
+
                     <p>Prishtin&euml;, Kosov&euml;</p>
-                    
+
                     <p class="orari">Operating hours are from 7am – 2am EST,
                         <br>7 days a week, excluding holidays
                     </p>
@@ -167,7 +172,7 @@
 
             </div>
         </div>
-                    <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+        <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
 
     </footer>
 
@@ -183,7 +188,7 @@
         content.fillStyle = gradient;
         content.fillRect(10, 10, 1433, 80);
         content.font = "italic 25px serif"
-        content.strokeText("Here we used some color detailing to show our enthusiasm for art!",50,50);
+        content.strokeText("Here we used some color detailing to show our enthusiasm for art!", 50, 50);
     </script>
 </body>
 
