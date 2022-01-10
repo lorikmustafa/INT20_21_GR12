@@ -353,3 +353,16 @@ text-align: center;
 #value {
   font-size: 50px;
 }
+#dinamike {
+  text-align: center;
+  padding: 5px;
+  background-color: #fe4365;
+  border: solid 1px #c3c3c3;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#slide {
+  display: none;
+  
+}

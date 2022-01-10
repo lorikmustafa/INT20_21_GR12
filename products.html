@@ -7,6 +7,8 @@
     <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
     <script src="products.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slide.js"></script>
     <script>
         function ndryshoNgjyren(ngjyra) {
             document.body.style.backgroundColor = ngjyra;
@@ -198,11 +200,15 @@
             <td><a href="login.html"><input type="button" value="Add to cart" id="button"></a></td>
         </tr>
     </table>
-
+    <div id="dinamike">
+        Click to show video!
+    </div>
+    <div id="slide">
     <video width="700" height="auto" controls class="video">
         <source src="media/vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    </div>
 
     <button onclick="njoftimi()" id="buttonalert" style="margin-bottom: -50px; margin-top: 40px;">AUTHENTICATION!</button>
     <script>
