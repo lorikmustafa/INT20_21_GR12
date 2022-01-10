@@ -75,7 +75,7 @@
                 </td>
                 <td class="p_permbajtja">
                     <article>
-                        <p class="p_paragrafi">REXONA Cosmetics is a cosmetics brand that was launched on September 8,
+                        <p class="p_paragrafi" id="permbajtja">REXONA Cosmetics is a cosmetics brand that was launched on September 8,
                             2017 by Rihanna.
                             The brand is popular for its broad inclusivity across skin tones and gender, especially its
                             Pro
@@ -173,6 +173,28 @@
     <div id="div1" style="margin-left: 40%;" ondrop="drop(event)" ondragover="allowDrop(event)">
         <img id="drag1" src="Images/favicon.ico" draggable="true" ondragstart="drag(event)" width="357" height="302">
     </div>
+
+    <script>
+        let string = document.getElementById("permbajtja").innerHTML; 
+        let result = string.replace(/REXONA/g, "Rexona");
+        document.getElementById("permbajtja").innerHTML = result;
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("button").click(function(){
+            alert("Value: " + $("#test").val());
+        });
+        });
+    </script>
+    <div style="margin-left: auto;margin-right: auto;">
+        <p>Value: <input type="text" id="test" value="Default"></p>
+    </div>
+    
+    <button>Show Value</button>
+
+
     <footer>
         <div class="footer-permbajtja">
             <div class="div-rreshti">
