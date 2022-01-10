@@ -1,6 +1,6 @@
 function validateFormContact() {
     let name = document.getElementById("emri").value;
-    let email = document.getElementById("numri").value;
+    let email = document.getElementById("email").value;
     let subject = document.getElementById("subject").value;
     let number = document.getElementById("numri").value;
 
@@ -12,22 +12,38 @@ function validateFormContact() {
         return false;
     }
     
-    if (re_email.test(email)) {
-        // alert("done");
-        return true;
-    }
-    else {
-        alert("Nuk e keni shtypur email valid")
+    if (!re_email.test(email)) {
+        alert("Nuk e keni shtypur email valid");
         return false;
     }
-
-    if(re_number.test(number)){
-        return true;
+    else if (!re_number.test(number)){
+        alert("Nuk keni shtypur numer valid");
+        return false;
     }
     else {
-        alert("Nuk keni shtypur numer valid")
+        alert("Error!");
+        return false;
     }
 }
+
+
+// if (!re_email.test(email)) {
+//     // alert("done");
+//     return true;
+// }
+// else {
+//     alert("Nuk e keni shtypur email valid");
+//     return false;
+// }
+
+// if (re_number.test(number)){
+//     return true;
+// }
+// else {
+//     alert("Nuk keni shtypur numer valid");
+//     return false;
+// }
+
 
 // function validate() {
 //     var email = document.getElementById("email").value;
