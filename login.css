@@ -131,6 +131,7 @@ color: white;
 
 
   .wrapper{
+    margin-top: -300px;
     max-width: 485px;
     width: 100%;
     background: #fe4365;
