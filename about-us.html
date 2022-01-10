@@ -6,32 +6,38 @@
     <link rel="stylesheet" href="about-us.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
     <script src="js/drag_drop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="showhide.js"></script>
     <style>
-          .multibg {
+        .multibg {
             margin: auto;
             border: 2px solid #fe4365;
             width: 1200px;
             height: 700px;
             background-image: url(Images/background-1.PNG), url(Images/background-2.PNG);
             background-size: 600px, 600px;
-            background-position: left , right ;
+            background-position: left, right;
             background-repeat: no-repeat, no-repeat;
         }
+
         .multibg h2 {
             margin-top: 25px;
             margin-left: 35%;
             font-size: 50px;
             color: rgb(48, 48, 48);
         }
+
         canvas {
             margin-left: 30%;
             width: 400px;
             height: 200px;
         }
+
         .sponsor {
             margin-top: -35px;
             margin-left: 39%;
         }
+
         #textsponsor {
             font-style: oblique;
             font-size: 20pt;
@@ -47,7 +53,8 @@
             <ul class="nav_linqet">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="about-us.html" style="border-bottom:2px solid white; padding-bottom: 2px;">About Us</a></li>
+                <li><a href="about-us.html" style="border-bottom:2px solid white; padding-bottom: 2px;">About Us</a>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Log In</a></li>
             </ul>
@@ -67,23 +74,33 @@
                 </td>
                 <td class="p_permbajtja">
                     <article>
-                    <p class="p_paragrafi">REXONA Cosmetics is a cosmetics brand that was launched on September 8, 2017 by Rihanna.
-                        The brand is popular for its broad inclusivity across skin tones and gender, especially its Pro
-                        Filt'R foundation. The original foundation launch included 40 shades, since expanded to 50.
-                        The inclusion of REXONA Cosmetics concealer includes 50 shades offering a wide variety to all skin
-                        types.
-                        The intent behind having so many shades to offer is to differentiate from other makeup companies
-                        that do not cater to a broad market. REXONA Cosmetics was named one of <mark><a id="magazine"
-                                href="https://time.com/">Time magazine's best inventions of 2017</a></mark>.<br>
-                        REXONA Cosmetics's first products went on sale on September 8, 2017. The launch coincided with New
-                        York Fashion Week, where Rihanna also had a runway show for her collaboration with Puma.
-                        Promotion was so extensive, The New York Times wrote, "one might be forgiven for thinking it's
-                        actually Rihanna New York Fashion Week." In the US, the line launched in Sephora stores, on the
-                        Sephora website, and on REXONA Cosmetics's website.
-                        In the <abbr title="United Kingdom">UK</abbr>, REXONA Cosmetics was initially exclusive to Harvey
-                        Nichols department stores, until it was announced in May 2019 the line would also become available
-                        in the high street chemist Boots <abbr title="United Kingdom">UK</abbr>. REXONA Cosmetics is
-                        available online or in store in over 15 countries. </p>
+                        <p class="p_paragrafi">REXONA Cosmetics is a cosmetics brand that was launched on September 8,
+                            2017 by Rihanna.
+                            The brand is popular for its broad inclusivity across skin tones and gender, especially its
+                            Pro
+                            Filt'R foundation. The original foundation launch included 40 shades, since expanded to 50.
+                            The inclusion of REXONA Cosmetics concealer includes 50 shades offering a wide variety to
+                            all skin
+                            types.
+                            The intent behind having so many shades to offer is to differentiate from other makeup
+                            companies
+                            that do not cater to a broad market. REXONA Cosmetics was named one of <mark><a
+                                    id="magazine" href="https://time.com/">Time magazine's best inventions of
+                                    2017</a></mark>.<br>
+                            REXONA Cosmetics's first products went on sale on September 8, 2017. The launch coincided
+                            with New
+                            York Fashion Week, where Rihanna also had a runway show for her collaboration with Puma.
+                            Promotion was so extensive, The New York Times wrote, "one might be forgiven for thinking
+                            it's
+                            actually Rihanna New York Fashion Week." In the US, the line launched in Sephora stores, on
+                            the
+                            Sephora website, and on REXONA Cosmetics's website.
+                            In the <abbr title="United Kingdom">UK</abbr>, REXONA Cosmetics was initially exclusive to
+                            Harvey
+                            Nichols department stores, until it was announced in May 2019 the line would also become
+                            available
+                            in the high street chemist Boots <abbr title="United Kingdom">UK</abbr>. REXONA Cosmetics is
+                            available online or in store in over 15 countries. </p>
                     </article>
                 </td>
             </tr>
@@ -117,31 +134,36 @@
             </tr>
         </table>
     </section>
-    
+
     <div class="multibg">
         <svg height="100" width="100" id="circle">
             <circle cx="50" cy="50" r="40" fill="#fe4365" />
-        </svg> 
+        </svg>
         <h2>WHAT WE OFFER!</h2>
     </div>
 
     <div class="bottomDescription">
-        <p style="text-align: center; color: rgb(121, 39, 39);">Something about our quality? We guarantee the best, and only the best products to our costumers!</p>
-        <p style="text-align: center; color: rgb(121, 39, 39);">Our products reliability. We cooperate only with Certified Distributors!</p>
+        <p style="text-align: center; color: rgb(121, 39, 39);">Something about our quality? We guarantee the best, and
+            only the best products to our costumers!</p>
+        <p style="text-align: center; color: rgb(121, 39, 39);">Our products reliability. We cooperate only with
+            Certified Distributors!</p>
     </div>
 
 
     <script src="canvas.js">
     </script>
 
-    <div>
-        <audio controls autoplay style="background-color: hsl(266, 64%, 96%); margin:auto; display: block; margin-top: 20px;">
+    <div id="audiojquery">
+        <audio controls id="muzika"
+            style="background-color: hsl(266, 64%, 96%); margin:auto; display: block; margin-top: 20px;">
             <h4>U lodhe duke shikuar? Relaksohu me muzike!</h4>
             <source src="media/audio.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+            Your browser does not support the audio element.
+        </audio>
+        <button id="hide" style="margin-left: 39%;">Hide</button>
+        <button id="show" style="margin-left: 6%;">Show</button>
     </div>
-        
+
     <div id="div1" style="margin-left: 40%; margin-top: 40px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
     <div id="div1" style="margin-left: 40%;" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -170,7 +192,7 @@
 
                 <div class="footer-mes">
                     <h2>Navigation</h2>
-                    
+
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -182,16 +204,16 @@
 
                 <div class="footer-djatht">
                     <h2>Contact Us</h2>
-                    
+
                     <p>
                         <a href="mailto:rexona@costumerservice.com" title="mailto:rexona@costumerservice.com">
                             rexona@costumerservice.com</a>
                     </p>
-                    
+
                     <p><a href="tel:(+383)049318620" title="tel:18554407474">+1-855-440-7474</a></p>
-                    
+
                     <p>Prishtin&euml;, Kosov&euml;</p>
-                    
+
                     <p class="orari">Operating hours are from 7am – 2am EST,
                         <br>7 days a week, excluding holidays
                     </p>
@@ -200,7 +222,7 @@
 
             </div>
         </div>
-                    <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
+        <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
 
     </footer>
 
