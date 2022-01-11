@@ -337,7 +337,7 @@ table{
 }
 
 
-.p_paragrafi:first-letter {
+/* .p_paragrafi:first-letter {
   float: left;
   font-weight: bold;
   font-size: 80px;
@@ -345,7 +345,7 @@ table{
   line-height: 10px;
   line-height: 1rem;
   text-transform: uppercase;
-}
+} */
 
 
 .bottomDescription {
