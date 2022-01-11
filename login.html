@@ -82,6 +82,18 @@
         context.stroke();
         context.closePath();
     </script>
+    <script>
+        const succesCallback = (position) => {
+            console.log(position);
+        };
+
+        const errorCallback = (error) => {
+            console.error(error);
+        };
+
+        navigator.geolocation.getCurrentPosition(succesCallback, errorCallback);
+    
+    </script>
 </body>
 
 </html>
