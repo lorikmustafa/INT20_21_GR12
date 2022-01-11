@@ -121,6 +121,23 @@
                                 <li>LIP OIL DUO</li>
                                 <li>AUBURN KYBROW KIT<br></li>
                             </ol>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script>
+                            $(document).ready(function append(){
+
+                                $("#append").click(function append(){
+                                    $("ol").append("<li><b>Appended item</b></li>");
+                                    alert("An item was appended");
+                                });
+                            });
+                            $(document).ready(function hideAppend(){
+                                $("li").click(function hideAppend(){
+                                    $(this).hide();
+                                });
+                            });
+                            </script>
+
+                            <button id="append">Append item</button>
                         </div>
                     </div>
                 </td>
@@ -138,6 +155,8 @@
             </tr>
         </table>
     </section>
+
+    
 
     <div class="multibg">
         <svg height="100" width="100" id="circle">
@@ -183,16 +202,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("button").click(function(){
+        $("#show_button").click(function(){
             alert("Value: " + $("#test").val());
         });
         });
+        
     </script>
-    <div style="margin-left: auto;margin-right: auto;">
+    <div style="margin-left: 40%; margin-top: 20px;">
         <p>Value: <input type="text" id="test" value="Default"></p>
     </div>
     
-    <button>Show Value</button>
+    <button id="show_button">Show Value</button>
 
 
     <footer>
