@@ -75,7 +75,8 @@
                 </td>
                 <td class="p_permbajtja">
                     <article>
-                        <p class="p_paragrafi" id="permbajtja">REXONA Cosmetics is a cosmetics brand that was launched on September 8,
+                        <p class="p_paragrafi" id="permbajtja">REXONA Cosmetics is a cosmetics brand that was launched
+                            on September 8,
                             2017 by Rihanna.
                             The brand is popular for its broad inclusivity across skin tones and gender, especially its
                             Pro
@@ -107,7 +108,8 @@
             </tr>
             <tr>
                 <td id="data1">
-                <button id="buttonfade" style="width: 300px; margin-left: 40px;">Click to fade in/out part of table</button>
+                    <button id="buttonfade" style="width: 300px; margin-left: 40px;">Click to fade in/out part of
+                        table</button>
                     <div id="fade">
                         <p>Our products:</p>
                         <div id="productsList">
@@ -123,18 +125,18 @@
                             </ol>
                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                             <script>
-                            $(document).ready(function append(){
+                                $(document).ready(function append() {
 
-                                $("#append").click(function append(){
-                                    $("ol").append("<li><b>Appended item</b></li>");
-                                    alert("An item was appended");
+                                    $("#append").click(function append() {
+                                        $("ol").append("<li><b>Appended item</b></li>");
+                                        alert("An item was appended");
+                                    });
                                 });
-                            });
-                            $(document).ready(function hideAppend(){
-                                $("li").click(function hideAppend(){
-                                    $(this).hide();
+                                $(document).ready(function hideAppend() {
+                                    $("li").click(function hideAppend() {
+                                        $(this).hide();
+                                    });
                                 });
-                            });
                             </script>
 
                             <button id="append">Append item</button>
@@ -156,7 +158,7 @@
         </table>
     </section>
 
-    
+
 
     <div class="multibg">
         <svg height="100" width="100" id="circle">
@@ -187,31 +189,38 @@
         <button id="show" style="margin-left: 6%;">Show</button>
     </div>
 
-    <div id="div1" style="margin-left: 40%; margin-top: 40px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
-    <div id="div1" style="margin-left: 40%;" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img id="drag1" src="Images/favicon.ico" draggable="true" ondragstart="drag(event)" width="357" height="302">
+    <div id="dragdiv" style="display: flex;">
+        <div id="div1" style="margin-left: 30%; margin-top: 30px; padding: 0%;" ondrop="drop(event)"
+            ondragover="allowDrop(event)">
+        </div>
+
+        <div id="div1" style="margin-left: 4px; margin-top: 30px; padding: 0%;" ondrop="drop(event)"
+            ondragover="allowDrop(event)">
+            <img id="drag1" src="Images/favicon.ico" draggable="true" ondragstart="drag(event)" width="357"
+                height="302">
+        </div>
     </div>
 
     <script>
-        let string = document.getElementById("permbajtja").innerHTML; 
+        let string = document.getElementById("permbajtja").innerHTML;
         let result = string.replace(/REXONA/g, "Rexona");
         document.getElementById("permbajtja").innerHTML = result;
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-        $("#show_button").click(function(){
-            alert("Value: " + $("#test").val());
+        $(document).ready(function () {
+            $("#show_button").click(function () {
+                alert("Value: " + $("#test").val());
+            });
         });
-        });
-        
+
     </script>
     <div style="margin-left: 40%; margin-top: 20px;">
         <p>Value: <input type="text" id="test" value="Default"></p>
     </div>
-    
+
     <button id="show_button">Show Value</button>
 
 
