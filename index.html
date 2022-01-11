@@ -190,7 +190,13 @@
 
     </footer>
 
-
+    <script>
+        if(typeof(Worker)!=='undefined') {
+            console.log("Hooray! My browser supports Web Workers!");
+        } else {
+            console.log("Sorry! Your browser doesn't support Web Workers!")
+        }
+    </script>
 </body>
 
 </html>
