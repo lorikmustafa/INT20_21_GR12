@@ -61,7 +61,7 @@
             </ul>
         </nav>
     </header>
-
+    <h1 id="demo" style="color:#fe4365; font-size: 14pt;">Location will appear here</h1>
     <section>
         <table class="about">
             <tr>
@@ -280,7 +280,21 @@
         <p style="text-align: center; margin-top: 60px; justify-content: center;"><i>Copyright &copy;2021</i></p>
 
     </footer>
+    <script>
+        function getLocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
 
+    function showPosition(position){
+        console.log(position);
+        document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+    }
+    getLocation();
+    </script>
 </body>
 
 </html>
