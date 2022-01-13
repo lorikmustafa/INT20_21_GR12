@@ -13,6 +13,30 @@
             margin-top: -20px;
         }
     </style>
+    <script>
+        var looper;
+        var degrees = 0;
+        function rotateAnimation(el,speed){
+            var elem = document.getElementById(el);
+            if(navigator.userAgent.match("Chrome")){
+                elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("Firefox")){
+                elem.style.MozTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("MSIE")){
+                elem.style.msTransform = "rotate("+degrees+"deg)";
+            } else if(navigator.userAgent.match("Opera")){
+                elem.style.OTransform = "rotate("+degrees+"deg)";
+            } else {
+                elem.style.transform = "rotate("+degrees+"deg)";
+            }
+            looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+            degrees++;
+            if(degrees > 359){
+                degrees = 1;
+            }
+            document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+        }
+        </script>
 </head>
 
 <body>
@@ -27,9 +51,8 @@
                 <li><a href="login.html" style="border-bottom:2px solid white; padding-bottom: 2px;">Log In</a></li>
             </ul>
         </nav>
-    </header>
-
-    <div class="login-box">
+    </header> 
+    <div class="login-box"> 
         <h1>Login</h1>
         <div class="text-box">
             <form action="products.html" name="login" onsubmit="return validateForm()" method="post">
@@ -61,6 +84,9 @@
             <div class="status-text"></div>
           </div>
           <script src="script.js"></script>
+          <br><br><br>
+          <img id="img1" src="Images/user.png" style="width: 150px; height: 150px; margin-left: 33%; filter: invert(1);" alt="cog1">
+          <script>rotateAnimation("img1",10);</script> 
     </div>
     
     <canvas id="DemoCanvas" width="1240" height="960"></canvas>
