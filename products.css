@@ -217,7 +217,8 @@ margin-bottom: 10px;
 }
 td {
   line-height: 25px;
-  background-color: hsl(266, 64%, 96%);
+  color: #fe4365;
+  /* background-color: hsl(266, 64%, 96%); */
 }
 .tabela{
 margin-left: auto;

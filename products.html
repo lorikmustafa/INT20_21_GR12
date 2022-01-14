@@ -10,8 +10,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="slide.js"></script>
     <script>
-        function ndryshoNgjyren(ngjyra) {
-            document.body.style.backgroundColor = ngjyra;
+        function ndryshoNgjyren() {
+            var vendosNgjyren = prompt("Which one dark or light u want to set the backgroundcolor: " , "");
+            if(vendosNgjyren == "dark"){
+            document.body.style.backgroundColor = 'black';
+            }
+            else {
+                document.body.style.backgroundColor = 'hsl(266, 64%, 96%)';
+            }
         }
     </script>
     <script>
@@ -40,11 +46,11 @@
     </script>
 </head>
 
-<body>
+<body onload="ndryshoNgjyren()">
     <header>
         <a class="logo" href="index.html"><img src="Images/logo.png" id="logoja" alt="Logo"></a>
-        <span onclick="ndryshoNgjyren('black');" style="margin-right:10px; color: #edf0f1; font-size: 16px;">Dark</span>
-        <span onclick="ndryshoNgjyren('hsl(266, 64%, 96%)');" style="color: #edf0f1; font-size: 16px;">Light</span>
+        <!-- <span onclick="ndryshoNgjyren('black');" style="margin-right:10px; color: #edf0f1; font-size: 16px;">Dark</span>
+        <span onclick="ndryshoNgjyren('hsl(266, 64%, 96%)');" style="color: #edf0f1; font-size: 16px;">Light</span> -->
         <nav>
             <ul class="nav_linqet">
                 <li><a href="index.html">Home</a></li>
