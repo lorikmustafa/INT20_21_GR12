@@ -370,3 +370,7 @@ table{
   padding: 10px;
   border: 1px solid #aaaaaa;
 }
+
+.webworker {
+  display: flex;
+}

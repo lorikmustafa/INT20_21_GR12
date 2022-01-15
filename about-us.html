@@ -103,12 +103,44 @@
                             available
                             in the high street chemist Boots <abbr title="United Kingdom">UK</abbr>. REXONA Cosmetics is
                             available online or in store in over 15 countries. </p>
+                        <p style="font-weight: bold;">Counted seconds: <output id="result"></output> </p>
+                        <div class="webworker">
+                            <button id="start" style="margin-left: 20%; width: 150px;" onclick="countSeconds()">Count
+                                Seconds on
+                                page</button>
+                            <button id="stop" style="margin-left: 100px; width: 150px;" onclick="stopSeconds()">Click
+                                when
+                                leave</button>
+                        </div>
+                        <script>
+                            var s;
+
+                            function countSeconds() {
+                                if (typeof (Worker) !== "undefined") {
+                                    if (typeof (s) == "undefined") {
+                                        s = new Worker("seconds.js");
+                                    }
+                                    s.onmessage = function (event) {
+                                        document.getElementById("result").innerHTML = event.data;
+                                    };
+                                } else {
+                                    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
+                                }
+                            }
+
+                            function stopSeconds() {
+                                s.terminate();
+                                s = undefined;
+                            }
+                        </script>
+
                     </article>
                 </td>
             </tr>
             <tr>
                 <td id="data1">
-                    <button id="buttonfade" style="width: 300px; margin-left: 100px; margin-top: 0%;">Click to fade in/out part of
+                    <button id="buttonfade" style="width: 300px; margin-left: 27%; margin-top: 0%;">Click to fade
+                        in/out part of
                         table</button>
                     <div id="fade">
                         <p>Our products:</p>
@@ -283,19 +315,19 @@
 
     </footer>
     <script>
-        function getLocation(){
-        if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+            }
         }
-    }
 
-    function showPosition(position){
-        console.log(position);
-        document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
-    }
-    getLocation();
+        function showPosition(position) {
+            console.log(position);
+            document.getElementById("demo").innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+        getLocation();
     </script>
 </body>
 
