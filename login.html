@@ -16,8 +16,8 @@
     <script>
         var looper;
         var degrees = 0;
-        function rotateAnimation(el,speed){
-            var elem = document.getElementById(el);
+        function rotateAnimation(img1,speed){
+            var elem = document.getElementById(img1);
             if(navigator.userAgent.match("Chrome")){
                 elem.style.WebkitTransform = "rotate("+degrees+"deg)";
             } else if(navigator.userAgent.match("Firefox")){
@@ -29,7 +29,7 @@
             } else {
                 elem.style.transform = "rotate("+degrees+"deg)";
             }
-            looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+            looper = setTimeout('rotateAnimation(\''+img1+'\','+speed+')',speed);
             degrees++;
             if(degrees > 359){
                 degrees = 1;
@@ -108,7 +108,7 @@
         context.stroke();
         context.closePath();
     </script>
-    <script>
+    <!-- <script>
         const succesCallback = (position) => {
             console.log(position);
         };
@@ -117,7 +117,7 @@
             console.error(error);
         };
         navigator.geolocation.getCurrentPosition(succesCallback, errorCallback);
-    </script>
+    </script> -->
 </body>
 
 </html>
