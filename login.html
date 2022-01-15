@@ -34,7 +34,7 @@
             if(degrees > 359){
                 degrees = 1;
             }
-            document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+            document.getElementById("img1").innerHTML = "rotate("+degrees+"deg)";
         }
         </script>
 </head>
@@ -85,7 +85,7 @@
           </div>
           <script src="script.js"></script>
           <br><br><br>
-          <img id="img1" src="Images/user.png" style="width: 150px; height: 150px; margin-left: 33%; filter: invert(1);" alt="cog1">
+          <img id="img1" src="Images/user.png" style="width: 150px; height: 150px; margin-left: 33%; filter: invert(1);" alt="Image 1">
           <script>rotateAnimation("img1",10);</script> 
     </div>
     
@@ -108,7 +108,7 @@
         context.stroke();
         context.closePath();
     </script>
-    <!-- <script>
+    <script>
         const succesCallback = (position) => {
             console.log(position);
         };
@@ -117,7 +117,7 @@
             console.error(error);
         };
         navigator.geolocation.getCurrentPosition(succesCallback, errorCallback);
-    </script> -->
+    </script>
 </body>
 
 </html>
