@@ -4,7 +4,7 @@ function validateFormContact() {
     let subject = document.getElementById("subject").value;
     let number = document.getElementById("numri").value;
 
-    let re_number = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    let re_number = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{3,6}$/;
     let re_email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     if (name == "" || email == "" || subject == "" || numri == "") {
@@ -21,8 +21,8 @@ function validateFormContact() {
         return false;
     }
     else {
-        alert("Error!");
-        return false;
+        alert("Done!");
+        return true;
     }
 }
 
