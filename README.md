@@ -1,5 +1,5 @@
 # INT20_21_GR2
-Projekti nga lënda Interneti - FIEK - 2021
+Projekti nga lënda Interneti - FIEK - 2021!
 
 [Rexona Cosmetics - Netlify link](https://rexonacosmetics.netlify.app 'Rexona Cosmetics - Netlify link')
 
